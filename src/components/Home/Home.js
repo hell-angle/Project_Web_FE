@@ -16,7 +16,7 @@ const Home = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8000/user/chatbox",
+          "https://chatbox-project-final.onrender.com/user/chatbox",
           { prompt: message },
           {
             headers: {
