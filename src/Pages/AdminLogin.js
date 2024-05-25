@@ -24,7 +24,7 @@ const AdminLogin = () => {
         navigate("/admin/dashboard");
       })
       .catch((err) => {
-        setError(err.response);
+        setError(err.response ? err.response.data.message : "An error occurred");
       });
   };
 
